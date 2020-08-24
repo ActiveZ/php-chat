@@ -1,0 +1,25 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    text-align: center;
+}
+
+#main {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    border: ridge 20px red;
+    background-color: aquamarine;
+}
+
+#message {
+    width: 300px;
+}
+
+button {
+    height: 40px;
+    border-radius: 12%;
+    background-color: darkgreen;
+    color: white;
+}
