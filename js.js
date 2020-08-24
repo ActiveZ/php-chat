@@ -1,7 +1,7 @@
 //fichier sur le pc client 	
 
-//var url = "http://frugysoft.planethoster.world/chat/php/api.php" // serveur planethoster
-var url = "http://frugysoft.free.fr/chat/php/api.php" // serveur free frugysoft
+var url = "http://frugysoft.planethoster.world/chat/php/api.php" // serveur planethoster
+// var url = "http://frugysoft.free.fr/chat/php/api.php" // serveur free frugysoft
 //var url = "http://frugysoft.freeboxos.fr:8041/chat/php/api.php"; // serveur pi41
 //var url = "http://localhost/chat/php/api.php"; //serveur de ce pc
 //var url = "https://tokmo.fr/apiPHP/api.php"; // serveur Jonathan
@@ -51,8 +51,7 @@ async function recevoir () {
     if (response.ok) {
         data = await response.json();
     }
-    //
-    console.log(data);;
+    // console.log(data);;
     for (let d in data) {
         let date = new Date(data[d].dateTimestamp); // pour serveur perso
         // let date = new Date(data[d].dateTimestamp * 1000); // pour serveur Jonathan
